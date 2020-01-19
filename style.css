@@ -60,14 +60,23 @@ h1 {
   opacity: 0;
 }
 
+/* Show boxes */
+#timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Right side */
 #timeline ul li:nth-child(odd) div {
   left: 40px;
+  transform: translate(200px, 0);
 }
 
 /* Left side */
 #timeline ul li:nth-child(even) div {
   left: -434px;
+  transform: translate(-200px, 0);
 }
 
 /* Dots */
